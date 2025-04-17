@@ -61,7 +61,7 @@ rotate_proxies() {
         echo "Using proxy: $ip:$port"
 
         # Wait for 1 hour (3600 seconds) before rotating to the next proxy
-        sleep 3600
+        sleep 600
     done
 }
 
@@ -77,4 +77,4 @@ export https_proxy=$https_proxy
 
 # Run your Python script with the proxy settings
 echo "Running Python script with proxy..."
-python3 lancer.py
+nohup python3 lancer.py
