@@ -77,4 +77,4 @@ export https_proxy=$https_proxy
 
 # Run your Python script with the proxy settings
 echo "Running Python script with proxy..."
-nohup python3 lancer.py
+python3 lancer.py
